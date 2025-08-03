@@ -1,0 +1,56 @@
+Plug 'vim-surround'
+
+set number relativenumber
+set clipboard=unnamedplus
+set history=1000
+set expandtab
+
+nmap q ys
+
+nnoremap <C-w> vi
+nnoremap <C-S-w> va
+nnoremap <A-y> :t.<CR>
+xnoremap <A-y> :t'><CR>
+nnoremap dd "_dd
+vnoremap d "_d
+nnoremap daw "_daw
+nnoremap dw "_daw
+nnoremap C <nop>
+
+nnoremap p "+p
+nnoremap P "+P
+vnoremap p "_d"+P
+
+nnoremap s "_s
+vnoremap s "_s
+
+nnoremap <PU> :action EditorIncreaseFontSize<CR>
+nnoremap <PD> :action EditorDecreaseFontSize<CR>
+
+nnoremap \ee :action ActivateProjectToolWindow<CR>
+nnoremap \er :action ActivateRunToolWindow<CR>
+nnoremap \es :action ActivateServicesToolWindow<CR>
+nnoremap \ed :action ActivateDebugToolWindow<CR>
+
+nnoremap <A-p> :action ToggleLineBreakpoint<CR>
+" nnoremap <A-i> :action ParameterInfo<CR> // IntellijIdea
+
+nnoremap <Tab> :execute "normal! ^i\<Tab>"<CR>
+vnoremap <Tab> >gv
+nnoremap <S-Tab> <<
+vnoremap <S-Tab> <gv
+nnoremap <C-Tab> :normal! I<Tab><CR>
+
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fw :action FindInPath<CR>
+nnoremap <leader>fb :action RecentFiles<CR>
+
+nnoremap <A-a> <C-w>h
+nnoremap <A-s> <C-w>l
+nnoremap <A-e> <C-w>k
+nnoremap <A-d> <C-w>j
+
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fw :action FindInPath<CR>
+nnoremap <leader>fb :action RecentFiles<CR>
+nnoremap <leader>fh :action QuickJavaDoc<CR>

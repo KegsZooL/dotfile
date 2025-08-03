@@ -1,0 +1,8 @@
+dark-mode: true
+model: lm_studio/TheBloke/CodeLlama-13B-Instruct-GGUF
+gitignore: false
+show-model-warnings: false
+set-env:
+  - LM_STUDIO_API_KEY=dummy-api-key
+  - LM_STUDIO_API_BASE=http://localhost:1234/v1
+  - AIDER_DESK_API_BASE_URL=http://localhost:24337/api
